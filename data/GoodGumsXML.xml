@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PurchaseCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Purchases>
+    <Purchase>
+      <id>1</id>
+      <fullName>Anna Acacia</fullName>
+      <emailAddress>anna@acacia.com</emailAddress>
+      <productname>Lilly Pilly</productname>
+      <unitprice>100</unitprice>
+      <quantity>1</quantity>
+    </Purchase>
+    <Purchase>
+      <id>2</id>
+      <fullName>Byron Beech</fullName>
+      <emailAddress>byron@beech.com</emailAddress>
+      <productname>Snow Gum</productname>
+      <unitprice>17</unitprice>
+      <quantity>2</quantity>
+    </Purchase>
+    <Purchase>
+      <id>3</id>
+      <fullName>Cassie Casuarina</fullName>
+      <emailAddress>cassie@casuarina.com</emailAddress>
+      <productname>Golden Wattle</productname>
+      <unitprice>45</unitprice>
+      <quantity>3</quantity>
+    </Purchase>
+    <Purchase>
+      <id>4</id>
+      <fullName>Donny Dahlia</fullName>
+      <emailAddress>donny@dahlia.com</emailAddress>
+      <productname>Rusty Gum</productname>
+      <unitprice>8</unitprice>
+      <quantity>44</quantity>
+    </Purchase>
+    <Purchase>
+      <id>5</id>
+      <fullName>Rama Nicholson</fullName>
+      <emailAddress>rnicholson@iinet.net.au</emailAddress>
+      <productname>Golden Wattle</productname>
+      <unitprice>45</unitprice>
+      <quantity>13</quantity>
+    </Purchase>
+    <Purchase>
+      <id>6</id>
+      <fullName>Jimmy James</fullName>
+      <emailAddress>sonalrik@baist.net.au</emailAddress>
+      <productname>Silver Princess Gum</productname>
+      <unitprice>90</unitprice>
+      <quantity>23</quantity>
+    </Purchase>
+    <Purchase>
+      <id>7</id>
+      <fullName>David Shinks</fullName>
+      <emailAddress>davidShink@hotmail.com</emailAddress>
+      <productname>Poa Grass</productname>
+      <unitprice>9</unitprice>
+      <quantity>14</quantity>
+    </Purchase>
+  </Purchases>
+</PurchaseCollection>

@@ -1,0 +1,328 @@
+﻿* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: normal;
+    color: black;
+    scroll-behavior: smooth;
+}
+footer {
+    padding: 20px;
+    margin-top: 50px;
+}
+.wrapper {
+    margin-inline: auto;
+    width: min(90%, 1300px);
+}
+header {
+    background-color: rgb(245,245,245);
+    padding: 15px;
+    min-height: 106px;
+    text-align: center;
+}
+
+.logoNav {
+    display: inline-block;
+    max-width: 100%;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+nav {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#navContainer {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navButtons {
+    display: inline-block;
+    margin: 25px;
+}
+
+    .navButtons a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: rgb(80,80,80);
+    }
+
+        .navButtons a:hover {
+            color: rgb(147,205,130);
+            border-bottom: 1px solid black;
+        }
+
+    .navButtons .current {
+        border-bottom: 1px solid black;
+        color: black;
+    }
+
+    /*Index*/
+.hero {
+    width: 100%;
+    background-image: url('data/images/Plants/Acacia pycnantha/acacia-background-cropped.jpg');
+    font-size: 4em;
+    text-align: center;
+    padding: 7% 10px;
+    margin-bottom: 1em;
+}
+
+.heroSpan {
+    color: white;
+    max-width: 90%;
+}
+.backgroundWithText {
+    color: white;
+    text-align: center;
+    position: relative;
+    isolation: isolate;
+}
+.backgroundImage {
+    /*general*/
+    background-position: center;
+    background-size: cover;
+    /*concerned with gradient darkening with pseudo elements*/
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient( 0deg, rgb(0 0 0 / .4), rgb(0 0 0/ 0));
+}
+    .indexHeading{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 3em;
+        padding: .5em;
+    }
+    .gridView{
+        width: 100%;
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+    .gridView th{
+        font-size: 1em;
+        text-align: center;
+        text-transform: uppercase;
+        padding: .5em;
+    }
+
+    .gridView td{
+        font-size: 1em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        color: rgb(80,80,80);
+        padding: .5em;
+    }
+
+@media (min-width: 650px) {
+    .gridView th {
+        font-size: 1.5em;
+    }
+
+    .gridView td {
+        font-size: 1.2em;
+    }
+
+    .indexHeading {
+        font-size: 4em;
+    }
+}
+
+.orderLabel{
+    margin: 1em;
+}
+/*Add Record*/
+
+form select, form input {
+    padding: .3em;
+    margin-top: .15em;
+    font-size: 1.5em;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border: 2px solid rgb(240,154,39);
+    margin-bottom: 1em;
+}
+#addForm select:hover{
+    cursor: pointer;
+}
+form input:hover {
+    box-shadow: 0 0 10px 2px rgba(0,0,0, .1);
+}
+.fieldButton input:hover{
+    cursor:pointer;
+}
+.addRecordButton{
+    max-width: 500px;
+}
+.fieldButton{
+    text-align: center;
+}
+.addRecordSummary{
+    text-align: center;
+    font-size: 1.75em;
+}
+.addRecordSummary ul{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .75em;
+}
+.formLabel{
+    display: block;
+    text-align: left;
+    font-size: 1.25em;
+}
+.asterisk {
+    color: rgb(240,154,39);
+}
+
+.confirmMessage{
+    text-align: center;
+    padding: .75em;
+}
+
+/*Invoice*/
+.margin{
+    margin-bottom: 2em;
+}
+form h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.25em;
+    margin-bottom: .5em;
+        margin-top: 1em;
+}
+form h1 {
+font-size: 3em;
+margin-block: 1em;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+font-weight: 700;
+}
+.invoiceSummary li{
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Print*/
+form span{
+    font-size: 1.5em;
+}
+.printForm{
+    margin: .5em;
+    padding: 1em;
+}
+#printForm{
+    font-style: initial;
+}
+@media (min-width: 1200px){
+    
+    #addForm select, #addForm input {
+        margin-bottom: 0;
+    }
+    .addRecordField{
+    width: 25%;
+}
+    .dropDown{
+        padding-top: 10px;
+    }
+    .formSection{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 2.5em;
+            align-items: center;
+        }
+
+    .smallInvoice {
+        width: 30%;
+    }
+    form h2{margin-top: 2em;
+            margin-bottom: 1em;
+    }
+}
+/*Stocktake*/
+.stockForm{
+margin-bottom: 15em;
+}
+.stockButtons{
+    width: 10%;
+    cursor: pointer;
+}
+.stockLevel{
+    width: 30%;
+    text-align: center;
+}
+#lblReorderLevel{
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.buttonFlex{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top: .5em;
+}
+.stockForm td{
+    padding-inline: .75em;
+    text-align: center;
+}
+.stockForm td[colspan="3"]{
+    padding: 1em;
+}
+.stockForm input {
+    margin: 0;
+}
+.itemNameColumn {
+    width: 50%;
+    padding: .75em;
+}
+.smallColumns{
+    padding: .75em;
+    width: 11%;
+}
+.tinyColumn {
+    width: 6%;
+}
+.calcButton{
+    margin: 1em;
+}
+.stockSummary{
+    font-family: 'Trebuchet MS';
+    font-size: 1.5em;
+    padding: 1em;
+    border: 2px solid black;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 3em;
+}
+
+.chart{
+    max-width: 100%;
+    height: auto;
+}
+.chartWrapper {
+    margin-inline: auto;
+    width: min(90%, 1300px);
+    text-align: center;
+}
+.chartContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
